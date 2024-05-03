@@ -2,26 +2,30 @@ package org.example.services;
 
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 public class ConsumoApi {
-    // Setting URL
     String url_str = "https://v6.exchangerate-api.com/v6/6c4a71f9adc8560015a27e23/latest/USD";
 
-    // Making Request
-    URL url = new URL(url_str);
-    HttpURLConnection request = (HttpURLConnection) url.openConnection();
-        request.connect();
+    public String BuscaDados(String dados) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(dados))
+                .build();
 
-    // Convert to JSON
-    JsonParser jp = new JsonParser();
-    JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
-    JsonObject jsonobj = root.getAsJsonObject();
+        HttpResponse<String> response = client
+                .send(request, HttpResponse.BodyHandlers.ofString());
 
-    // Accessing object
-    String req_result = jsonobj.get("result").getAsString();
+        String json = response.body();
 
-    public ConsumoApi() throws IOException {
+        return json;
     }
+
+
+
+
+
 }
