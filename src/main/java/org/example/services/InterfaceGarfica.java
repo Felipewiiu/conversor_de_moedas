@@ -1,6 +1,9 @@
 package org.example.services;
 
+import java.util.Scanner;
+
 public class InterfaceGarfica {
+
     public String Linha(){
         String caracter = "*";
         String linha = caracter.repeat(50);
@@ -25,5 +28,7 @@ public class InterfaceGarfica {
                 " \\           /\n" +
                 "  ¨¨W¨¨¨¨¨W¨  \n" +
                 Linha();
+
+
     }
 }

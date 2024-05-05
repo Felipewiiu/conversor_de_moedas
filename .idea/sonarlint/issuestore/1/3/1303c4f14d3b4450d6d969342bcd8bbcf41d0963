@@ -1,3 +1,29 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(ú¡ôİøÿÿÿÿ8Öşƒô1J$42886eaf-6dfc-468f-8d32-84ce63d11e13
-r	java:S106"+Replace this use of System.out by a logger.(©Ñÿ¶ùÿÿÿÿ8Öşƒô1J$0bc61ca1-483f-4a59-9585-6b43c6f6e1f1
+r	java:S106""+Replace this use of System.out by a logger.(©Ñÿ¶ùÿÿÿÿ8¸æè×ô1J$f60df009-488f-4972-98ac-0dc9a83bb491
+r	java:S106#"+Replace this use of System.out by a logger.(Ä¨”Ûşÿÿÿÿ8¸æè×ô1J$3d308788-da01-43aa-b745-c07727d1e604
+~	java:S125'"<This block of commented-out lines of code should be removed.(ÓêÚ½8¹æè×ô1J$498cfcac-001d-4098-92c1-48200e86679a
+r	java:S106+"+Replace this use of System.out by a logger.(‰»¨ ıÿÿÿÿ8¹æè×ô1J$b93744a8-bb53-4c54-b280-0f6cc12699e9
+m	java:S1060"+Replace this use of System.out by a logger.(ş¾…Ó8¹æè×ô1J$08d93e1b-c341-4561-99b4-b1796e7114f0
+r	java:S1061"+Replace this use of System.out by a logger.(—Ä€İùÿÿÿÿ8¹æè×ô1J$8f0f416c-fac9-480e-87fa-ca2a70baf596
+m	java:S1066"+Replace this use of System.out by a logger.(ÈÔàë8¹æè×ô1J$45b90c0e-56af-430a-863f-1bd4e3db4690
+t
+java:S1128"1Remove this unused import 'com.google.gson.Gson'.(–§8ºæè×ô1J$8dee0e33-55e5-44d0-a8e3-e36da18ab240
+‚
+java:S1128"?Remove this unused import 'org.example.model.ModeloConvertido'.(Í±“Ô8ºæè×ô1J$1a0e17fc-c212-4284-a00b-323f7254b415
+~
+java:S1128"<Remove this unused import 'org.example.services.ConsumoApi'.(­êì8ºæè×ô1J$ef8564fe-b361-4b83-a17f-6fefd99e37c0
+z
+java:S1128
+"7Remove this unused import 'java.net.HttpURLConnection'.(¬¬˜­8ºæè×ô1J$d5be8f1d-6f7a-41a9-890f-53605bee7656
+~
+java:S1128";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ8ºæè×ô1J$9e6d68f0-c193-48c0-a2e9-c7e7762ddb75
+l
+java:S1128")Remove this unused import 'java.net.URI'.(Ö¦¨°8ºæè×ô1J$b7f23206-3eab-4c77-8c13-fb8dd6df73c8
+q
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8ºæè×ô1J$7d8de295-a6f9-4121-9bda-cdd3d91dbbab
+}
+java:S1128"5Remove this unused import 'java.net.http.HttpClient'.(Œ³’Öşÿÿÿÿ8ºæè×ô1J$ab1ef294-6744-4b93-86c8-b0568a978228
+~
+java:S1128"6Remove this unused import 'java.net.http.HttpRequest'.(ş€ŠÍşÿÿÿÿ8ºæè×ô1J$ef681f35-457a-48c1-bb05-8f7749855d22
+
+java:S1128"7Remove this unused import 'java.net.http.HttpResponse'.(’ûÌûÿÿÿÿ8ºæè×ô1J$370252c2-8dc7-4a12-b3ea-50cf667a72a1
