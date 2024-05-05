@@ -1,0 +1,5 @@
+
+
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "json".(²ί‡8Ρ—ασ1J$f1e19b09-2d2c-4792-b960-947754ae2f93
+”	java:S116"RRename this field "url_str" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Λη8‘Ρ—ασ1J$ea914923-7fd9-452c-811b-8d7f3455b1ff
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(γΧωÿÿÿÿ8’Ρ—ασ1J$c41c50c4-0358-4b0c-a06e-4910f400396e
