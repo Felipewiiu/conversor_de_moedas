@@ -5,6 +5,7 @@ import org.example.model.ModeloConvertido;
 import org.example.services.ConsumoApi;
 import org.example.services.ConverteMoeda;
 import org.example.services.InterfaceGarfica;
+import org.example.services.ValorCotacao;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -27,6 +28,7 @@ public class Main {
         InterfaceGarfica interfaceGarfica = new InterfaceGarfica();
         String menu = interfaceGarfica.menu();
         ConverteMoeda converteMoeda = new ConverteMoeda();
+        ValorCotacao valorCotacao = new ValorCotacao();
 
 
 
@@ -39,19 +41,22 @@ public class Main {
 //            System.out.println(converteMoeda.executaConvercao("USD", "AOA"));
             switch(busca) {
                 case "1":
-                    valorUnitaro = converteMoeda.executaConvercao("USD", "ARS");
-                    System.out.println("Digite o valor que deseja converter: \n");
-                    valorDesejado = leitura.nextLine();
-
-                    Double resultado = Double.valueOf(valorUnitaro) * Double.valueOf(valorDesejado);
-
-                    System.out.println("\nO valor " + Double.valueOf(valorDesejado) + " [USD] " + "Correspode ao valor final de ==> " + resultado + "[ARS]");
-                    System.out.println("\nDigite (7) para terminar ou (C) para continuar\n");
-                    busca = leitura.nextLine();
-
+                    valorCotacao.cotaValor("USD", "ARS");
                     break;
                 case "2":
-                    System.out.println("valor corretp");
+                    valorCotacao.cotaValor("ARS", "USD");
+                    break;
+                case "3":
+                    valorCotacao.cotaValor("USD", "BRL");
+                    break;
+                case "4":
+                    valorCotacao.cotaValor("BRL", "USD");
+                    break;
+                case "5":
+                    valorCotacao.cotaValor("USD", "COP");
+                    break;
+                case "6":
+                    valorCotacao.cotaValor("COP", "USD");
                     break;
                 default:
             }

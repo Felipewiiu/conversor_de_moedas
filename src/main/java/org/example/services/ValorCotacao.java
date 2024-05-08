@@ -11,16 +11,16 @@ public class ValorCotacao {
     String valorDesejado = "";
     ConverteMoeda converteMoeda = new ConverteMoeda();
 
-    public String cotaValor() throws IOException, InterruptedException {
-        valorUnitaro = converteMoeda.executaConvercao("USD", "ARS");
+    public void cotaValor(String moedaBase, String moedaAlvo ) throws IOException, InterruptedException {
+        valorUnitaro = converteMoeda.executaConvercao(moedaBase, moedaAlvo);
         System.out.println("Digite o valor que deseja converter: \n");
         valorDesejado = leitura.nextLine();
 
         Double resultado = Double.valueOf(valorUnitaro) * Double.valueOf(valorDesejado);
 
-        System.out.println("\nO valor " + Double.valueOf(valorDesejado) + " [USD] " + "Correspode ao valor final de ==> " + resultado + "[ARS]");
+        System.out.println("\nO valor " + Double.valueOf(valorDesejado) + " " + moedaBase + " Correspode ao valor final de ==> " + resultado + " " + moedaAlvo);
         System.out.println("\nDigite (7) para terminar ou (C) para continuar\n");
         busca = leitura.nextLine();
-        return "teste";
+
     }
 }
